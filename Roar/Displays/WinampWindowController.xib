@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="19529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.AVKitIBPlugin" version="19529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19529"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="WinampWindowController" customModule="Roar" customModuleProvider="target">
+            <connections>
+                <outlet property="bodyLabel" destination="1JA-Nw-PdG" id="8Dp-Lp-Ka7"/>
+                <outlet property="playerView" destination="iht-lP-LoE" id="6j2-dt-nh6"/>
+                <outlet property="subtitleLabel" destination="eEG-Bp-rQi" id="8yZ-7p-gJk"/>
+                <outlet property="titleLabel" destination="1FF-TM-KZN" id="a5r-gY-Fuv"/>
+                <outlet property="titleLabelConstraint" destination="xdi-Ru-XUW" id="bsy-fy-fGX"/>
+                <outlet property="window" destination="QvC-M9-y7g" id="3EN-gT-dtI"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="QvC-M9-y7g">
+            <windowCollectionBehavior key="collectionBehavior" canJoinAllSpaces="YES" stationary="YES" ignoresCycle="YES" fullScreenNone="YES" fullScreenDisallowsTiling="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="429" height="297"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1415"/>
+            <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
+                <rect key="frame" x="0.0" y="0.0" width="275" height="232"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3XH-i9-kQf">
+                        <rect key="frame" x="0.0" y="0.0" width="275" height="232"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="232" id="b2T-Dn-jHt"/>
+                            <constraint firstAttribute="width" constant="275" id="kJ6-cx-vCY"/>
+                        </constraints>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" image="Winamp" id="VEn-MD-zA0"/>
+                    </imageView>
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="eEG-Bp-rQi">
+                        <rect key="frame" x="14" y="84" width="243" height="10"/>
+                        <textFieldCell key="cell" title="Multiline Label" id="FsB-Z0-95g">
+                            <font key="font" size="9" name="CourierNewPS-BoldMT"/>
+                            <color key="textColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="1JA-Nw-PdG">
+                        <rect key="frame" x="14" y="43" width="243" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="37" id="NKH-Tw-GNd"/>
+                        </constraints>
+                        <textFieldCell key="cell" truncatesLastVisibleLine="YES" title="Multiline Label" id="THL-lI-5YK">
+                            <font key="font" size="9" name="CourierNewPSMT"/>
+                            <color key="textColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <avPlayerView controlsStyle="none" videoGravity="resize" translatesAutoresizingMaskIntoConstraints="NO" id="iht-lP-LoE">
+                        <rect key="frame" x="22" y="163" width="77" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="JTF-NR-4Yn"/>
+                            <constraint firstAttribute="width" constant="77" id="xIk-ce-JIB"/>
+                        </constraints>
+                    </avPlayerView>
+                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="g2e-qT-zuU">
+                        <rect key="frame" x="108" y="195" width="159" height="15"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1FF-TM-KZN">
+                                <rect key="frame" x="158" y="2" width="32" height="10"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="eIe-YE-nA3">
+                                    <font key="font" size="9" name="CourierNewPSMT"/>
+                                    <color key="textColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="1FF-TM-KZN" firstAttribute="centerY" secondItem="g2e-qT-zuU" secondAttribute="centerY" constant="1" id="aCL-2R-ryy"/>
+                            <constraint firstAttribute="height" constant="15" id="p2E-DP-OaB"/>
+                            <constraint firstAttribute="width" constant="159" id="sdv-r0-997"/>
+                            <constraint firstItem="1FF-TM-KZN" firstAttribute="leading" secondItem="g2e-qT-zuU" secondAttribute="leading" constant="160" id="xdi-Ru-XUW"/>
+                        </constraints>
+                    </customView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="3XH-i9-kQf" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" id="00l-PY-S7Y"/>
+                    <constraint firstItem="g2e-qT-zuU" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="108" id="3Nj-Oy-6Dj"/>
+                    <constraint firstItem="3XH-i9-kQf" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" id="643-PR-tv5"/>
+                    <constraint firstItem="1JA-Nw-PdG" firstAttribute="top" secondItem="eEG-Bp-rQi" secondAttribute="bottom" constant="4" id="6I7-Fn-32x"/>
+                    <constraint firstItem="iht-lP-LoE" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="22" id="70b-AD-QL9"/>
+                    <constraint firstAttribute="bottom" secondItem="3XH-i9-kQf" secondAttribute="bottom" id="9yp-2t-tL7"/>
+                    <constraint firstItem="1JA-Nw-PdG" firstAttribute="trailing" secondItem="eEG-Bp-rQi" secondAttribute="trailing" id="BBh-B9-KvS"/>
+                    <constraint firstItem="g2e-qT-zuU" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="22" id="Cyc-YY-cPm"/>
+                    <constraint firstAttribute="trailing" secondItem="3XH-i9-kQf" secondAttribute="trailing" id="Dda-GH-RUK"/>
+                    <constraint firstItem="eEG-Bp-rQi" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="16" id="Feo-m1-iI5"/>
+                    <constraint firstItem="iht-lP-LoE" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="41" id="RZe-kA-gYF"/>
+                    <constraint firstAttribute="trailing" secondItem="eEG-Bp-rQi" secondAttribute="trailing" constant="20" symbolic="YES" id="XWp-GH-T0l"/>
+                    <constraint firstItem="eEG-Bp-rQi" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="138" id="cZH-sH-at8"/>
+                    <constraint firstItem="1JA-Nw-PdG" firstAttribute="leading" secondItem="eEG-Bp-rQi" secondAttribute="leading" id="sTA-jf-KFE"/>
+                </constraints>
+            </view>
+            <point key="canvasLocation" x="113.5" y="157"/>
+        </window>
+    </objects>
+    <resources>
+        <image name="Winamp" width="275" height="232"/>
+    </resources>
+</document>

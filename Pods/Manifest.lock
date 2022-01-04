@@ -1,0 +1,22 @@
+PODS:
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - MASShortcut (2.4.0)
+
+DEPENDENCIES:
+  - FMDB
+  - MASShortcut
+
+SPEC REPOS:
+  trunk:
+    - FMDB
+    - MASShortcut
+
+SPEC CHECKSUMS:
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  MASShortcut: d9e4909e878661cc42877cc9d6efbe638273ab57
+
+PODFILE CHECKSUM: 95a1e664f5980a2e1420e3e1e591cbc30d7d1feb
+
+COCOAPODS: 1.11.2

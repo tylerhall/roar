@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="19529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19529"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PrefsWindowController" customModule="Roar" customModuleProvider="target">
+            <connections>
+                <outlet property="actionShortcutView" destination="RIY-P6-SZb" id="aQ6-aw-eos"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+            <rect key="contentRect" x="196" y="240" width="362" height="118"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1415"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="362" height="103"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <gridView horizontalHuggingPriority="1000" verticalHuggingPriority="1000" xPlacement="trailing" yPlacement="bottom" rowAlignment="none" rowSpacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="soH-6e-O1K">
+                        <rect key="frame" x="11" y="11" width="340" height="81"/>
+                        <rows>
+                            <gridRow id="bLM-nW-bJK"/>
+                            <gridRow id="bXc-ez-bJ6"/>
+                            <gridRow id="7j8-if-Lg0"/>
+                        </rows>
+                        <columns>
+                            <gridColumn id="fJ0-TC-rHu"/>
+                            <gridColumn id="eMj-Kt-mAw"/>
+                        </columns>
+                        <gridCells>
+                            <gridCell row="bLM-nW-bJK" column="fJ0-TC-rHu" yPlacement="center" id="KDS-vG-EYV">
+                                <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="J0E-Vd-uJq">
+                                    <rect key="frame" x="-2" y="62" width="181" height="19"/>
+                                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="Run Action on Notification:" id="f0A-4U-N3J">
+                                        <font key="font" usesAppearanceFont="YES"/>
+                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                            </gridCell>
+                            <gridCell row="bLM-nW-bJK" column="eMj-Kt-mAw" xPlacement="leading" yPlacement="center" id="o1k-6U-wcs">
+                                <customView key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="RIY-P6-SZb" customClass="MASShortcutView">
+                                    <rect key="frame" x="183" y="62" width="157" height="19"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="157" id="K1k-p8-mnB"/>
+                                        <constraint firstAttribute="height" constant="19" id="aca-Nq-md8"/>
+                                    </constraints>
+                                </customView>
+                            </gridCell>
+                            <gridCell row="bXc-ez-bJ6" column="fJ0-TC-rHu" yPlacement="center" id="7Zi-xQ-ISw">
+                                <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="NHY-1U-OmX">
+                                    <rect key="frame" x="-2" y="31" width="181" height="20"/>
+                                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="Notification Style:" id="qVU-A8-11P">
+                                        <font key="font" usesAppearanceFont="YES"/>
+                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                            </gridCell>
+                            <gridCell row="bXc-ez-bJ6" column="eMj-Kt-mAw" xPlacement="leading" yPlacement="center" id="bB9-do-xMo">
+                                <popUpButton key="contentView" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1mL-Ti-uV7">
+                                    <rect key="frame" x="180" y="27" width="164" height="25"/>
+                                    <popUpButtonCell key="cell" type="push" title="Music Video" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="lxA-BZ-P6O" id="52g-Mh-VpK">
+                                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                        <font key="font" metaFont="menu"/>
+                                        <menu key="menu" id="WuS-du-21u">
+                                            <items>
+                                                <menuItem title="Music Video" state="on" id="lxA-BZ-P6O"/>
+                                                <menuItem title="Bezel" tag="1" id="kwS-fm-jth"/>
+                                                <menuItem title="Winamp" tag="2" id="xdK-14-rGH"/>
+                                                <menuItem title="iTunes Widget" tag="3" id="wO9-z9-vlO"/>
+                                                <menuItem title="Macintosh" tag="4" id="xmp-ma-IrE"/>
+                                            </items>
+                                        </menu>
+                                    </popUpButtonCell>
+                                    <connections>
+                                        <binding destination="hl5-iJ-ZIG" name="selectedTag" keyPath="values.noteDisplayStyle" id="yJu-tv-TpD"/>
+                                    </connections>
+                                </popUpButton>
+                            </gridCell>
+                            <gridCell row="7j8-if-Lg0" column="fJ0-TC-rHu" yPlacement="center" id="z0P-Wh-MvG"/>
+                            <gridCell row="7j8-if-Lg0" column="eMj-Kt-mAw" xPlacement="leading" yPlacement="center" id="3US-VX-K1i">
+                                <button key="contentView" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="teR-y0-9ir">
+                                    <rect key="frame" x="176" y="-7" width="171" height="32"/>
+                                    <buttonCell key="cell" type="push" title="Preview Notification" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="mtG-W3-ZUe">
+                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="showNotificationPreview:" target="-2" id="MjM-so-CYb"/>
+                                    </connections>
+                                </button>
+                            </gridCell>
+                        </gridCells>
+                    </gridView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="soH-6e-O1K" secondAttribute="trailing" constant="11" id="LeB-MW-7eq"/>
+                    <constraint firstItem="soH-6e-O1K" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="11" id="TOy-Pf-n8d"/>
+                    <constraint firstAttribute="bottom" secondItem="soH-6e-O1K" secondAttribute="bottom" constant="11" id="oht-bi-UuY"/>
+                    <constraint firstItem="soH-6e-O1K" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="11" id="yTC-o4-UXQ"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="19" y="75"/>
+        </window>
+        <userDefaultsController representsSharedInstance="YES" id="hl5-iJ-ZIG"/>
+    </objects>
+</document>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="19529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19529"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ActionWindowController" customModule="Roar" customModuleProvider="target">
+            <connections>
+                <outlet property="appLabel" destination="GtH-zw-Fxc" id="NGA-cb-Tr9"/>
+                <outlet property="codeLabel" destination="PWc-hX-Tds" id="KnW-Cy-XTm"/>
+                <outlet property="copyLabel" destination="J6h-U6-7do" id="GSM-p7-VG3"/>
+                <outlet property="urlLabel" destination="xE8-RC-auR" id="bZH-fC-7cw"/>
+                <outlet property="window" destination="tHf-Qu-awQ" id="11s-a8-NQt"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Roar" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" releasedWhenClosed="NO" frameAutosaveName="" animationBehavior="default" id="tHf-Qu-awQ" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" utility="YES"/>
+            <rect key="contentRect" x="181" y="118" width="276" height="378"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1415"/>
+            <view key="contentView" id="o31-gS-1SW">
+                <rect key="frame" x="0.0" y="0.0" width="276" height="194"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="16" horizontalStackHuggingPriority="250" verticalStackHuggingPriority="249.99998474121094" horizontalHuggingPriority="1000" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kaJ-ln-VM9">
+                        <rect key="frame" x="11" y="11" width="254" height="172"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GtH-zw-Fxc">
+                                <rect key="frame" x="-2" y="141" width="160" height="31"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" enabled="NO" refusesFirstResponder="YES" title="⌘1 Open App" id="Kda-Q4-oZ9">
+                                    <font key="font" textStyle="largeTitle" name=".SFNS-Regular"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="PWc-hX-Tds">
+                                <rect key="frame" x="-2" y="94" width="159" height="31"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" enabled="NO" refusesFirstResponder="YES" title="⌘2 Copy 2FA" id="tmr-8y-1Sy">
+                                    <font key="font" textStyle="largeTitle" name=".SFNS-Regular"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="J6h-U6-7do">
+                                <rect key="frame" x="-2" y="47" width="161" height="31"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" enabled="NO" refusesFirstResponder="YES" title="⌘3 Copy Text" id="UZe-2q-iVe">
+                                    <font key="font" textStyle="largeTitle" name=".SFNS-Regular"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xE8-RC-auR">
+                                <rect key="frame" x="-2" y="0.0" width="179" height="31"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" enabled="NO" refusesFirstResponder="YES" title="⌘4 Open URLs" id="XrY-XI-TYf">
+                                    <font key="font" textStyle="largeTitle" name=".SFNS-Regular"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <visibilityPriorities>
+                            <integer value="1000"/>
+                            <integer value="1000"/>
+                            <integer value="1000"/>
+                            <integer value="1000"/>
+                        </visibilityPriorities>
+                        <customSpacing>
+                            <real value="3.4028234663852886e+38"/>
+                            <real value="3.4028234663852886e+38"/>
+                            <real value="3.4028234663852886e+38"/>
+                            <real value="3.4028234663852886e+38"/>
+                        </customSpacing>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="kaJ-ln-VM9" secondAttribute="trailing" constant="11" id="FlF-zx-Smd"/>
+                    <constraint firstItem="kaJ-ln-VM9" firstAttribute="top" secondItem="o31-gS-1SW" secondAttribute="top" constant="11" id="dd0-bT-V6d"/>
+                    <constraint firstItem="kaJ-ln-VM9" firstAttribute="leading" secondItem="o31-gS-1SW" secondAttribute="leading" constant="11" id="taw-IY-5ga"/>
+                    <constraint firstAttribute="bottom" secondItem="kaJ-ln-VM9" secondAttribute="bottom" constant="11" id="zq3-UG-G21"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="oJ9-GS-qaG"/>
+            </connections>
+            <point key="canvasLocation" x="-252" y="-211"/>
+        </window>
+    </objects>
+</document>

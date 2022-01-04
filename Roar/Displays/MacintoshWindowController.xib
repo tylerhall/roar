@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="19529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19529"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="MacintoshWindowController" customModule="Roar" customModuleProvider="target">
+            <connections>
+                <outlet property="appLabel" destination="H6T-vU-nXe" id="L7X-N2-ZpQ"/>
+                <outlet property="bodyLabel" destination="Ci3-pV-WOW" id="x9N-nB-3a6"/>
+                <outlet property="subtitleLabel" destination="lWo-MF-RGd" id="Sh7-x6-l8D"/>
+                <outlet property="titleLabel" destination="8go-Bd-vt8" id="cnp-aW-bex"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowCollectionBehavior key="collectionBehavior" canJoinAllSpaces="YES" stationary="YES" fullScreenNone="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="348" height="196"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1415"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="348" height="196"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wgP-AI-a0C">
+                        <rect key="frame" x="0.0" y="0.0" width="348" height="196"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" image="Macintosh" id="Stg-ft-taS"/>
+                    </imageView>
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="8go-Bd-vt8">
+                        <rect key="frame" x="6" y="137" width="324" height="16"/>
+                        <textFieldCell key="cell" title="Multiline Label" id="PeZ-ul-NHc">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="lWo-MF-RGd">
+                        <rect key="frame" x="6" y="113" width="324" height="16"/>
+                        <textFieldCell key="cell" selectable="YES" title="Multiline Label" id="RJr-nG-lft">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="Ci3-pV-WOW">
+                        <rect key="frame" x="6" y="89" width="324" height="16"/>
+                        <textFieldCell key="cell" selectable="YES" title="Multiline Label" id="Jjp-K2-T13">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="H6T-vU-nXe">
+                        <rect key="frame" x="140" y="181" width="68" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="ish-Vv-pi9"/>
+                        </constraints>
+                        <textFieldCell key="cell" lineBreakMode="clipping" title="App Name" drawsBackground="YES" id="vhJ-QO-8Tk">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="H6T-vU-nXe" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="3" id="004-ge-Y65"/>
+                    <constraint firstItem="lWo-MF-RGd" firstAttribute="top" secondItem="8go-Bd-vt8" secondAttribute="bottom" constant="8" symbolic="YES" id="2Sg-l4-Gge"/>
+                    <constraint firstItem="H6T-vU-nXe" firstAttribute="centerX" secondItem="se5-gp-TjO" secondAttribute="centerX" id="G7P-6p-ONC"/>
+                    <constraint firstItem="8go-Bd-vt8" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="8" id="Pax-w1-ye5"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Ci3-pV-WOW" secondAttribute="bottom" constant="20" symbolic="YES" id="QBl-Yc-Bir"/>
+                    <constraint firstAttribute="trailing" secondItem="lWo-MF-RGd" secondAttribute="trailing" constant="20" symbolic="YES" id="Tsa-bT-OeX"/>
+                    <constraint firstAttribute="trailing" secondItem="Ci3-pV-WOW" secondAttribute="trailing" constant="20" symbolic="YES" id="hvg-y7-JQQ"/>
+                    <constraint firstAttribute="trailing" secondItem="8go-Bd-vt8" secondAttribute="trailing" constant="20" symbolic="YES" id="j73-cI-7Vn"/>
+                    <constraint firstItem="lWo-MF-RGd" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="8" id="osZ-Hs-jAm"/>
+                    <constraint firstItem="Ci3-pV-WOW" firstAttribute="top" secondItem="lWo-MF-RGd" secondAttribute="bottom" constant="8" symbolic="YES" id="sbq-iY-Ndp"/>
+                    <constraint firstItem="Ci3-pV-WOW" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="8" id="yRQ-lt-iXo"/>
+                    <constraint firstItem="8go-Bd-vt8" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="43" id="zLD-kJ-oYX"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="-174" y="50"/>
+        </window>
+    </objects>
+    <resources>
+        <image name="Macintosh" width="348" height="196"/>
+    </resources>
+</document>

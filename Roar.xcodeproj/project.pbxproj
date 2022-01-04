@@ -1,0 +1,570 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0974B1F9F9295AD9B1BC58EF /* Pods_Roar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D484C042CB96781483178D3E /* Pods_Roar.framework */; };
+		C6573DE72771783E00E2973C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6573DE62771783E00E2973C /* AppDelegate.swift */; };
+		C6573DE92771783F00E2973C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6573DE82771783F00E2973C /* Assets.xcassets */; };
+		C6573DEC2771783F00E2973C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6573DEA2771783F00E2973C /* MainMenu.xib */; };
+		C6573DF72771789600E2973C /* NCWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6573DF62771789600E2973C /* NCWatcher.swift */; };
+		C6573DF92771798800E2973C /* Pipette.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6573DF82771798800E2973C /* Pipette.swift */; };
+		C6573DFB2771859D00E2973C /* MusicVideoWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6573DFA2771859D00E2973C /* MusicVideoWindowController.xib */; };
+		C6573DFD277185A900E2973C /* MusicVideoWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6573DFC277185A900E2973C /* MusicVideoWindowController.swift */; };
+		C6573E002771A51A00E2973C /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6573DFF2771A51A00E2973C /* AsyncOperation.swift */; };
+		C6573E032771A74500E2973C /* NoteDisplayOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6573E022771A74500E2973C /* NoteDisplayOperation.swift */; };
+		C6573E052771A76100E2973C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6573E042771A76100E2973C /* Extensions.swift */; };
+		C6573E0A2772D1E800E2973C /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6573E092772D1E800E2973C /* AVKit.framework */; };
+		C6573E0B2772D25700E2973C /* winamp.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C6573E072772D10300E2973C /* winamp.mp4 */; };
+		C699FD282783D50F000328E3 /* PrefsWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C699FD262783D50F000328E3 /* PrefsWindowController.swift */; };
+		C699FD292783D50F000328E3 /* PrefsWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C699FD272783D50F000328E3 /* PrefsWindowController.xib */; };
+		C699FD312783DC32000328E3 /* iTunesWidgetWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C699FD302783DC32000328E3 /* iTunesWidgetWindowController.swift */; };
+		C699FD332783DC3B000328E3 /* iTunesWidgetWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C699FD322783DC3B000328E3 /* iTunesWidgetWindowController.xib */; };
+		C699FD362783F022000328E3 /* ActionWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C699FD342783F022000328E3 /* ActionWindowController.swift */; };
+		C699FD372783F022000328E3 /* ActionWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C699FD352783F022000328E3 /* ActionWindowController.xib */; };
+		C6A5554D278401F0009A47CD /* MacintoshWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A5554B278401F0009A47CD /* MacintoshWindowController.swift */; };
+		C6A5554E278401F0009A47CD /* MacintoshWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6A5554C278401F0009A47CD /* MacintoshWindowController.xib */; };
+		C6A55554278404BC009A47CD /* macintosh.ttf in Fonts */ = {isa = PBXBuildFile; fileRef = C6A5554F2784033B009A47CD /* macintosh.ttf */; };
+		C6E5C4ED277250C000D08CD5 /* NoteWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E5C4EC277250C000D08CD5 /* NoteWindowController.swift */; };
+		C6E5C4EF2772564E00D08CD5 /* BezelWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E5C4EE2772564E00D08CD5 /* BezelWindowController.swift */; };
+		C6E5C4F12772565D00D08CD5 /* BezelWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6E5C4F02772565D00D08CD5 /* BezelWindowController.xib */; };
+		C6E5C4F4277259DA00D08CD5 /* WinampWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E5C4F2277259DA00D08CD5 /* WinampWindowController.swift */; };
+		C6E5C4F5277259DA00D08CD5 /* WinampWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6E5C4F3277259DA00D08CD5 /* WinampWindowController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C6A55553278404B3009A47CD /* Fonts */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Fonts;
+			dstSubfolderSpec = 7;
+			files = (
+				C6A55554278404BC009A47CD /* macintosh.ttf in Fonts */,
+			);
+			name = Fonts;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6EAFFA9CDDDD32D1E04AD7D7 /* Pods-Roar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Roar.debug.xcconfig"; path = "Target Support Files/Pods-Roar/Pods-Roar.debug.xcconfig"; sourceTree = "<group>"; };
+		C6573DE32771783E00E2973C /* Roar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6573DE62771783E00E2973C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C6573DE82771783F00E2973C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C6573DEB2771783F00E2973C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C6573DED2771783F00E2973C /* Roar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Roar.entitlements; sourceTree = "<group>"; };
+		C6573DF62771789600E2973C /* NCWatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCWatcher.swift; sourceTree = "<group>"; };
+		C6573DF82771798800E2973C /* Pipette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pipette.swift; sourceTree = "<group>"; };
+		C6573DFA2771859D00E2973C /* MusicVideoWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicVideoWindowController.xib; sourceTree = "<group>"; };
+		C6573DFC277185A900E2973C /* MusicVideoWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicVideoWindowController.swift; sourceTree = "<group>"; };
+		C6573DFF2771A51A00E2973C /* AsyncOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncOperation.swift; sourceTree = "<group>"; };
+		C6573E022771A74500E2973C /* NoteDisplayOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDisplayOperation.swift; sourceTree = "<group>"; };
+		C6573E042771A76100E2973C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C6573E072772D10300E2973C /* winamp.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = winamp.mp4; sourceTree = "<group>"; };
+		C6573E092772D1E800E2973C /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		C699FD262783D50F000328E3 /* PrefsWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefsWindowController.swift; sourceTree = "<group>"; };
+		C699FD272783D50F000328E3 /* PrefsWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrefsWindowController.xib; sourceTree = "<group>"; };
+		C699FD2F2783D8DA000328E3 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		C699FD302783DC32000328E3 /* iTunesWidgetWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesWidgetWindowController.swift; sourceTree = "<group>"; };
+		C699FD322783DC3B000328E3 /* iTunesWidgetWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = iTunesWidgetWindowController.xib; sourceTree = "<group>"; };
+		C699FD342783F022000328E3 /* ActionWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionWindowController.swift; sourceTree = "<group>"; };
+		C699FD352783F022000328E3 /* ActionWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActionWindowController.xib; sourceTree = "<group>"; };
+		C6A5554B278401F0009A47CD /* MacintoshWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacintoshWindowController.swift; sourceTree = "<group>"; };
+		C6A5554C278401F0009A47CD /* MacintoshWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MacintoshWindowController.xib; sourceTree = "<group>"; };
+		C6A5554F2784033B009A47CD /* macintosh.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = macintosh.ttf; sourceTree = "<group>"; };
+		C6A555552784058F009A47CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C6E5C4EC277250C000D08CD5 /* NoteWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteWindowController.swift; sourceTree = "<group>"; };
+		C6E5C4EE2772564E00D08CD5 /* BezelWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BezelWindowController.swift; sourceTree = "<group>"; };
+		C6E5C4F02772565D00D08CD5 /* BezelWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BezelWindowController.xib; sourceTree = "<group>"; };
+		C6E5C4F2277259DA00D08CD5 /* WinampWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WinampWindowController.swift; sourceTree = "<group>"; };
+		C6E5C4F3277259DA00D08CD5 /* WinampWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WinampWindowController.xib; sourceTree = "<group>"; };
+		D484C042CB96781483178D3E /* Pods_Roar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Roar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2504DB9783DA26928DF1A03 /* Pods-Roar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Roar.release.xcconfig"; path = "Target Support Files/Pods-Roar/Pods-Roar.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C6573DE02771783E00E2973C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6573E0A2772D1E800E2973C /* AVKit.framework in Frameworks */,
+				0974B1F9F9295AD9B1BC58EF /* Pods_Roar.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		72B063DC598FF84B9416F8A2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6EAFFA9CDDDD32D1E04AD7D7 /* Pods-Roar.debug.xcconfig */,
+				F2504DB9783DA26928DF1A03 /* Pods-Roar.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C6573DDA2771783E00E2973C = {
+			isa = PBXGroup;
+			children = (
+				C6573DE52771783E00E2973C /* Roar */,
+				C6573DE42771783E00E2973C /* Products */,
+				C6573E082772D1E800E2973C /* Frameworks */,
+				72B063DC598FF84B9416F8A2 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		C6573DE42771783E00E2973C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6573DE32771783E00E2973C /* Roar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6573DE52771783E00E2973C /* Roar */ = {
+			isa = PBXGroup;
+			children = (
+				C6573DE62771783E00E2973C /* AppDelegate.swift */,
+				C699FD252783D4F2000328E3 /* Windows */,
+				C6573E012771A73000E2973C /* Watcher */,
+				C6573DFE277185AD00E2973C /* Displays */,
+				C6573E062771A78600E2973C /* Helpers */,
+				C6573DE82771783F00E2973C /* Assets.xcassets */,
+				C6573DEA2771783F00E2973C /* MainMenu.xib */,
+				C6A5554F2784033B009A47CD /* macintosh.ttf */,
+				C6573E072772D10300E2973C /* winamp.mp4 */,
+				C6573DED2771783F00E2973C /* Roar.entitlements */,
+				C699FD2F2783D8DA000328E3 /* BridgingHeader.h */,
+				C6A555552784058F009A47CD /* Info.plist */,
+			);
+			path = Roar;
+			sourceTree = "<group>";
+		};
+		C6573DFE277185AD00E2973C /* Displays */ = {
+			isa = PBXGroup;
+			children = (
+				C6573DFC277185A900E2973C /* MusicVideoWindowController.swift */,
+				C6573DFA2771859D00E2973C /* MusicVideoWindowController.xib */,
+				C6E5C4EC277250C000D08CD5 /* NoteWindowController.swift */,
+				C6E5C4EE2772564E00D08CD5 /* BezelWindowController.swift */,
+				C6E5C4F02772565D00D08CD5 /* BezelWindowController.xib */,
+				C6E5C4F2277259DA00D08CD5 /* WinampWindowController.swift */,
+				C6E5C4F3277259DA00D08CD5 /* WinampWindowController.xib */,
+				C699FD302783DC32000328E3 /* iTunesWidgetWindowController.swift */,
+				C699FD322783DC3B000328E3 /* iTunesWidgetWindowController.xib */,
+				C6A5554B278401F0009A47CD /* MacintoshWindowController.swift */,
+				C6A5554C278401F0009A47CD /* MacintoshWindowController.xib */,
+			);
+			path = Displays;
+			sourceTree = "<group>";
+		};
+		C6573E012771A73000E2973C /* Watcher */ = {
+			isa = PBXGroup;
+			children = (
+				C6573DF62771789600E2973C /* NCWatcher.swift */,
+				C6573E022771A74500E2973C /* NoteDisplayOperation.swift */,
+			);
+			path = Watcher;
+			sourceTree = "<group>";
+		};
+		C6573E062771A78600E2973C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C6573DF82771798800E2973C /* Pipette.swift */,
+				C6573E042771A76100E2973C /* Extensions.swift */,
+				C6573DFF2771A51A00E2973C /* AsyncOperation.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C6573E082772D1E800E2973C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6573E092772D1E800E2973C /* AVKit.framework */,
+				D484C042CB96781483178D3E /* Pods_Roar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C699FD252783D4F2000328E3 /* Windows */ = {
+			isa = PBXGroup;
+			children = (
+				C699FD262783D50F000328E3 /* PrefsWindowController.swift */,
+				C699FD272783D50F000328E3 /* PrefsWindowController.xib */,
+				C699FD342783F022000328E3 /* ActionWindowController.swift */,
+				C699FD352783F022000328E3 /* ActionWindowController.xib */,
+			);
+			path = Windows;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C6573DE22771783E00E2973C /* Roar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6573DF02771783F00E2973C /* Build configuration list for PBXNativeTarget "Roar" */;
+			buildPhases = (
+				EA755A82B13612A772640FB3 /* [CP] Check Pods Manifest.lock */,
+				C6573DDF2771783E00E2973C /* Sources */,
+				C6573DE02771783E00E2973C /* Frameworks */,
+				C6573DE12771783E00E2973C /* Resources */,
+				4810E95CE85E0CF34A749F0E /* [CP] Embed Pods Frameworks */,
+				C6A55553278404B3009A47CD /* Fonts */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Roar;
+			productName = Roar;
+			productReference = C6573DE32771783E00E2973C /* Roar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C6573DDB2771783E00E2973C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					C6573DE22771783E00E2973C = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = C6573DDE2771783E00E2973C /* Build configuration list for PBXProject "Roar" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C6573DDA2771783E00E2973C;
+			productRefGroup = C6573DE42771783E00E2973C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C6573DE22771783E00E2973C /* Roar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C6573DE12771783E00E2973C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C699FD372783F022000328E3 /* ActionWindowController.xib in Resources */,
+				C6E5C4F12772565D00D08CD5 /* BezelWindowController.xib in Resources */,
+				C6E5C4F5277259DA00D08CD5 /* WinampWindowController.xib in Resources */,
+				C699FD332783DC3B000328E3 /* iTunesWidgetWindowController.xib in Resources */,
+				C6573DFB2771859D00E2973C /* MusicVideoWindowController.xib in Resources */,
+				C6573DE92771783F00E2973C /* Assets.xcassets in Resources */,
+				C6A5554E278401F0009A47CD /* MacintoshWindowController.xib in Resources */,
+				C6573DEC2771783F00E2973C /* MainMenu.xib in Resources */,
+				C699FD292783D50F000328E3 /* PrefsWindowController.xib in Resources */,
+				C6573E0B2772D25700E2973C /* winamp.mp4 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4810E95CE85E0CF34A749F0E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Roar/Pods-Roar-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Roar/Pods-Roar-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Roar/Pods-Roar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA755A82B13612A772640FB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Roar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C6573DDF2771783E00E2973C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6E5C4EF2772564E00D08CD5 /* BezelWindowController.swift in Sources */,
+				C6573DF92771798800E2973C /* Pipette.swift in Sources */,
+				C6A5554D278401F0009A47CD /* MacintoshWindowController.swift in Sources */,
+				C6573DE72771783E00E2973C /* AppDelegate.swift in Sources */,
+				C6573E032771A74500E2973C /* NoteDisplayOperation.swift in Sources */,
+				C699FD282783D50F000328E3 /* PrefsWindowController.swift in Sources */,
+				C699FD312783DC32000328E3 /* iTunesWidgetWindowController.swift in Sources */,
+				C6573DFD277185A900E2973C /* MusicVideoWindowController.swift in Sources */,
+				C6E5C4F4277259DA00D08CD5 /* WinampWindowController.swift in Sources */,
+				C6573E002771A51A00E2973C /* AsyncOperation.swift in Sources */,
+				C6573DF72771789600E2973C /* NCWatcher.swift in Sources */,
+				C6573E052771A76100E2973C /* Extensions.swift in Sources */,
+				C699FD362783F022000328E3 /* ActionWindowController.swift in Sources */,
+				C6E5C4ED277250C000D08CD5 /* NoteWindowController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C6573DEA2771783F00E2973C /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6573DEB2771783F00E2973C /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C6573DEE2771783F00E2973C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C6573DEF2771783F00E2973C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		C6573DF12771783F00E2973C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EAFFA9CDDDD32D1E04AD7D7 /* Pods-Roar.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Roar/Roar.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3A6K89K388;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Roar/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "This is all just a dumb joke.";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.tyler.Roar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = Roar/BridgingHeader.h;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C6573DF22771783F00E2973C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2504DB9783DA26928DF1A03 /* Pods-Roar.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Roar/Roar.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3A6K89K388;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Roar/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "This is all just a dumb joke.";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.tyler.Roar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = Roar/BridgingHeader.h;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C6573DDE2771783E00E2973C /* Build configuration list for PBXProject "Roar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6573DEE2771783F00E2973C /* Debug */,
+				C6573DEF2771783F00E2973C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6573DF02771783F00E2973C /* Build configuration list for PBXNativeTarget "Roar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6573DF12771783F00E2973C /* Debug */,
+				C6573DF22771783F00E2973C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C6573DDB2771783E00E2973C /* Project object */;
+}

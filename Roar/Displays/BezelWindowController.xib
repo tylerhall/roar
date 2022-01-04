@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="19529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19529"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="BezelWindowController" customModule="Roar" customModuleProvider="target">
+            <connections>
+                <outlet property="appIconView" destination="LQT-n6-oUZ" id="1jy-wY-VZO"/>
+                <outlet property="backgroundView" destination="sAE-uh-OZK" id="7hl-a2-YaL"/>
+                <outlet property="bodyLabel" destination="PaB-Xf-LUY" id="egt-ge-ATy"/>
+                <outlet property="subtitleLabel" destination="eWl-Vr-HZk" id="kTo-iG-8qf"/>
+                <outlet property="titleLabel" destination="3tI-K0-9L0" id="6BE-1f-fee"/>
+                <outlet property="window" destination="QvC-M9-y7g" id="3EN-gT-dtI"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="QvC-M9-y7g">
+            <windowCollectionBehavior key="collectionBehavior" canJoinAllSpaces="YES" stationary="YES" ignoresCycle="YES" fullScreenNone="YES" fullScreenDisallowsTiling="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="429" height="297"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1792" height="1095"/>
+            <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="sAE-uh-OZK">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="300" id="A4D-UB-z8p"/>
+                            <constraint firstAttribute="width" constant="300" id="GQm-Gt-nN1"/>
+                        </constraints>
+                    </customView>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LQT-n6-oUZ">
+                        <rect key="frame" x="114" y="204" width="72" height="72"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="72" id="4hw-Pn-Th6"/>
+                            <constraint firstAttribute="height" constant="72" id="Owa-JG-pRi"/>
+                        </constraints>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" id="sbe-7t-r9Z"/>
+                    </imageView>
+                    <stackView distribution="fill" orientation="vertical" alignment="centerX" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fnW-Sp-o7h">
+                        <rect key="frame" x="12" y="121" width="276" height="75"/>
+                        <subviews>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="3tI-K0-9L0">
+                                <rect key="frame" x="72" y="54" width="133" height="21"/>
+                                <textFieldCell key="cell" selectable="YES" alignment="center" title="Multiline Label" id="g7S-Vf-VvN">
+                                    <font key="font" size="18" name="LucidaGrande-Bold"/>
+                                    <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="eWl-Vr-HZk">
+                                <rect key="frame" x="78" y="27" width="121" height="19"/>
+                                <textFieldCell key="cell" selectable="YES" alignment="center" title="Multiline Label" id="qOm-ja-wBN">
+                                    <font key="font" size="16" name="LucidaGrande-Bold"/>
+                                    <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="PaB-Xf-LUY">
+                                <rect key="frame" x="82" y="0.0" width="113" height="19"/>
+                                <textFieldCell key="cell" selectable="YES" alignment="center" title="Multiline Label" id="VEQ-CM-gvb">
+                                    <font key="font" size="16" name="LucidaGrande"/>
+                                    <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <visibilityPriorities>
+                            <integer value="1000"/>
+                            <integer value="1000"/>
+                            <integer value="1000"/>
+                        </visibilityPriorities>
+                        <customSpacing>
+                            <real value="3.4028234663852886e+38"/>
+                            <real value="3.4028234663852886e+38"/>
+                            <real value="3.4028234663852886e+38"/>
+                        </customSpacing>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="LQT-n6-oUZ" firstAttribute="centerX" secondItem="EiT-Mj-1SZ" secondAttribute="centerX" id="1hW-L6-vWB"/>
+                    <constraint firstItem="fnW-Sp-o7h" firstAttribute="top" secondItem="LQT-n6-oUZ" secondAttribute="bottom" constant="8" id="8lQ-lD-dGg"/>
+                    <constraint firstItem="sAE-uh-OZK" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" id="BUV-Vw-Qul"/>
+                    <constraint firstItem="sAE-uh-OZK" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" id="ClM-EW-VSb"/>
+                    <constraint firstAttribute="bottom" secondItem="sAE-uh-OZK" secondAttribute="bottom" id="NJ2-jk-rEG"/>
+                    <constraint firstItem="fnW-Sp-o7h" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="12" id="TVc-ub-7Ql"/>
+                    <constraint firstAttribute="trailing" secondItem="fnW-Sp-o7h" secondAttribute="trailing" constant="12" id="f3l-ID-Au8"/>
+                    <constraint firstItem="LQT-n6-oUZ" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="24" id="tul-KG-IOc"/>
+                    <constraint firstAttribute="trailing" secondItem="sAE-uh-OZK" secondAttribute="trailing" id="wvM-Uz-Opz"/>
+                </constraints>
+            </view>
+            <point key="canvasLocation" x="113.5" y="157.5"/>
+        </window>
+    </objects>
+</document>

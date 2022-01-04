@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="19529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19529"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="MusicVideoWindowController" customModule="Roar" customModuleProvider="target">
+            <connections>
+                <outlet property="appIconView" destination="ImE-TT-8xk" id="faw-CZ-mis"/>
+                <outlet property="backgroundView" destination="KkS-kA-cme" id="Ivv-6G-D6K"/>
+                <outlet property="bodyLabel" destination="8Mv-iD-tTA" id="2tW-ai-Y2I"/>
+                <outlet property="subtitleLabel" destination="SbH-tL-jcj" id="edi-gw-TAs"/>
+                <outlet property="titleLabel" destination="uAi-zE-azl" id="yf1-Iy-kSv"/>
+                <outlet property="window" destination="QvC-M9-y7g" id="IKy-zy-dgz"/>
+                <outlet property="windowWidthConstraint" destination="je7-wd-eCn" id="cIp-VW-4Tw"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" hasShadow="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" tabbingMode="disallowed" id="QvC-M9-y7g" customClass="MusicVideoWindow" customModule="Roar" customModuleProvider="target">
+            <windowCollectionBehavior key="collectionBehavior" canJoinAllSpaces="YES" stationary="YES" fullScreenNone="YES" fullScreenDisallowsTiling="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="598" height="184"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1792" height="1095"/>
+            <view key="contentView" wantsLayer="YES" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EiT-Mj-1SZ">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
+                <subviews>
+                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="KkS-kA-cme">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="150" id="RHh-7Q-nxQ"/>
+                            <constraint firstAttribute="width" constant="600" id="je7-wd-eCn"/>
+                        </constraints>
+                    </customView>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ImE-TT-8xk">
+                        <rect key="frame" x="24" y="54" width="72" height="72"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="72" id="ueJ-F0-B0E"/>
+                            <constraint firstAttribute="height" constant="72" id="y2T-Ib-QzH"/>
+                        </constraints>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageAlignment="top" imageScaling="proportionallyUpOrDown" id="A2C-fR-t33"/>
+                    </imageView>
+                    <stackView distribution="equalSpacing" orientation="vertical" alignment="leading" spacing="4" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GD7-rS-sxf">
+                        <rect key="frame" x="108" y="48" width="468" height="78"/>
+                        <subviews>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="uAi-zE-azl">
+                                <rect key="frame" x="-2" y="50" width="167" height="28"/>
+                                <textFieldCell key="cell" title="Multiline Label" id="t3b-sW-5kT">
+                                    <font key="font" size="24" name="LucidaGrande-Bold"/>
+                                    <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="SbH-tL-jcj">
+                                <rect key="frame" x="-2" y="25" width="129" height="21"/>
+                                <textFieldCell key="cell" title="Multiline Label" id="sgE-5R-8Tr">
+                                    <font key="font" size="18" name="LucidaGrande-Bold"/>
+                                    <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="8Mv-iD-tTA">
+                                <rect key="frame" x="-2" y="0.0" width="120" height="21"/>
+                                <textFieldCell key="cell" title="Multiline Label" id="lLh-rA-TSx">
+                                    <font key="font" size="18" name="LucidaGrande"/>
+                                    <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <visibilityPriorities>
+                            <integer value="1000"/>
+                            <integer value="1000"/>
+                            <integer value="1000"/>
+                        </visibilityPriorities>
+                        <customSpacing>
+                            <real value="3.4028234663852886e+38"/>
+                            <real value="3.4028234663852886e+38"/>
+                            <real value="3.4028234663852886e+38"/>
+                        </customSpacing>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="KkS-kA-cme" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" id="3cF-nm-r3f"/>
+                    <constraint firstItem="GD7-rS-sxf" firstAttribute="top" secondItem="ImE-TT-8xk" secondAttribute="top" id="HQj-Qp-mgb"/>
+                    <constraint firstItem="GD7-rS-sxf" firstAttribute="leading" secondItem="ImE-TT-8xk" secondAttribute="trailing" constant="12" id="OLL-FT-uiE"/>
+                    <constraint firstAttribute="bottom" secondItem="KkS-kA-cme" secondAttribute="bottom" id="PbF-XT-gIL"/>
+                    <constraint firstAttribute="trailing" secondItem="KkS-kA-cme" secondAttribute="trailing" id="TLK-70-wnm"/>
+                    <constraint firstItem="KkS-kA-cme" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" id="WgQ-le-5jM"/>
+                    <constraint firstItem="ImE-TT-8xk" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="24" id="Woz-zT-XYv"/>
+                    <constraint firstItem="ImE-TT-8xk" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="24" id="b6D-GF-UzL"/>
+                    <constraint firstAttribute="trailing" secondItem="GD7-rS-sxf" secondAttribute="trailing" constant="24" id="kAt-5X-cKH"/>
+                </constraints>
+            </view>
+            <point key="canvasLocation" x="19" y="98"/>
+        </window>
+    </objects>
+</document>

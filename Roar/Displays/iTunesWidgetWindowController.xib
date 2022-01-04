@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="19529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19529"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="iTunesWidgetWindowController" customModule="Roar" customModuleProvider="target">
+            <connections>
+                <outlet property="bodyLabel" destination="Dsz-dX-IUT" id="WEs-8V-y0D"/>
+                <outlet property="bodyLabelConstraint" destination="ewr-nl-teF" id="IIi-f8-xUu"/>
+                <outlet property="maskView" destination="7du-0x-Ki8" id="Xn3-tb-lw8"/>
+                <outlet property="subtitleLabel" destination="nk2-UJ-lV6" id="v8l-BN-WvG"/>
+                <outlet property="subtitleLabelConstraint" destination="QWO-sG-6rd" id="0rC-jM-Zhb"/>
+                <outlet property="titleLabel" destination="mwq-G8-6aK" id="h1C-ZC-1Zr"/>
+                <outlet property="titleLabelConstraint" destination="8tX-bW-8Qh" id="AOr-FX-8XO"/>
+                <outlet property="window" destination="QvC-M9-y7g" id="ayQ-br-ih5"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="QvC-M9-y7g">
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="304" height="146"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1415"/>
+            <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
+                <rect key="frame" x="0.0" y="0.0" width="304" height="146"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BWA-La-p7S">
+                        <rect key="frame" x="0.0" y="0.0" width="304" height="146"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" image="MusicWidget" id="Gdn-Nn-LfP"/>
+                    </imageView>
+                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="7du-0x-Ki8">
+                        <rect key="frame" x="25" y="28" width="254" height="98"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mwq-G8-6aK">
+                                <rect key="frame" x="258" y="62" width="33" height="14"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="X7Z-wa-MQ9">
+                                    <font key="font" metaFont="smallSystem"/>
+                                    <color key="textColor" red="0.30588235289999999" green="0.31764705879999999" blue="0.25882352939999997" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nk2-UJ-lV6">
+                                <rect key="frame" x="258" y="42" width="33" height="14"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="1Fw-wT-rD7">
+                                    <font key="font" metaFont="smallSystem"/>
+                                    <color key="textColor" red="0.30588235289999999" green="0.31764705879999999" blue="0.25882352939999997" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Dsz-dX-IUT">
+                                <rect key="frame" x="258" y="22" width="33" height="14"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="xrh-Ec-YBf">
+                                    <font key="font" metaFont="smallSystem"/>
+                                    <color key="textColor" red="0.30588235289999999" green="0.31764705879999999" blue="0.25882352939999997" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="mwq-G8-6aK" firstAttribute="centerY" secondItem="7du-0x-Ki8" secondAttribute="centerY" constant="-20" id="0Z0-BA-3zG"/>
+                            <constraint firstItem="mwq-G8-6aK" firstAttribute="leading" secondItem="7du-0x-Ki8" secondAttribute="leading" constant="260" id="8tX-bW-8Qh"/>
+                            <constraint firstItem="Dsz-dX-IUT" firstAttribute="leading" secondItem="7du-0x-Ki8" secondAttribute="leading" constant="260" id="QWO-sG-6rd"/>
+                            <constraint firstItem="Dsz-dX-IUT" firstAttribute="centerY" secondItem="7du-0x-Ki8" secondAttribute="centerY" constant="20" id="RIR-PT-3mJ"/>
+                            <constraint firstItem="nk2-UJ-lV6" firstAttribute="leading" secondItem="7du-0x-Ki8" secondAttribute="leading" constant="260" id="ewr-nl-teF"/>
+                            <constraint firstItem="nk2-UJ-lV6" firstAttribute="centerY" secondItem="7du-0x-Ki8" secondAttribute="centerY" id="lt3-JM-UFp"/>
+                        </constraints>
+                    </customView>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yU9-xs-fLW">
+                        <rect key="frame" x="0.0" y="0.0" width="304" height="146"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" image="iTunesMask" id="2KS-aL-O5b"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="7du-0x-Ki8" secondAttribute="trailing" constant="25" id="6UV-JF-WZr"/>
+                    <constraint firstAttribute="bottom" secondItem="7du-0x-Ki8" secondAttribute="bottom" constant="28" id="A9l-9U-J09"/>
+                    <constraint firstItem="7du-0x-Ki8" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="25" id="CU0-zo-KFz"/>
+                    <constraint firstItem="7du-0x-Ki8" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" id="GMx-PT-cnd"/>
+                </constraints>
+            </view>
+            <point key="canvasLocation" x="51" y="82"/>
+        </window>
+    </objects>
+    <resources>
+        <image name="MusicWidget" width="304" height="146"/>
+        <image name="iTunesMask" width="304" height="146"/>
+    </resources>
+</document>
